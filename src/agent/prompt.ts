@@ -114,7 +114,7 @@ Section quality rules:
 - Each page should provide real explanatory value: what the area does, why it exists, where to start, what to watch out for, and key source references.
 - Before finishing an init or update run, review the ${OPEN_WIKI_DIR}/ tree. Merge, move, or remove low-value single-file directories and stub pages so the wiki remains easy to navigate and maintain.
 - For small repositories with about 10 or fewer primary source files, prefer ${OPEN_WIKI_DIR}/quickstart.md plus at most 1-2 supporting pages. Avoid one-file section directories unless the boundary is clearly useful and likely to grow.
-- Do not create separate pages for CLI, operations, architecture, workflows, testing, integrations, or similar sections unless the repository has enough distinct behavior to justify them.
+- Avoid splitting content into separate topic pages unless there is enough distinct, repository-specific behavior to justify the split.
 
 Required documentation structure:
 - ${OPEN_WIKI_DIR}/quickstart.md must be the entrypoint.
