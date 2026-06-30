@@ -3116,10 +3116,7 @@ function resolveStartupCommand(command: CliCommand): CliCommand {
     command.kind === "run" &&
     !command.dryRun &&
     command.shouldStart &&
-    (command.print ||
-      command.command === "init" ||
-      command.command === "update" ||
-      !process.stdin.isTTY)
+    (command.print || !process.stdin.isTTY)
   ) {
     const provider = resolveConfiguredProvider();
     const apiKeyEnvKey = getProviderApiKeyEnvKey(provider);
